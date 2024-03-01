@@ -1,6 +1,6 @@
-# Clone (tutorial baased)
+Clone (tutorial based)
 
-#### Features:
+Features:
 - Profiles
 - Search
 - Cards (Pins)
