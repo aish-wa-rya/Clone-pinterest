@@ -1,0 +1,117 @@
+.h {
+  z-index: 15;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h-icon {
+  width: 50px;
+  height: 100%;
+  margin: 0 5px 0 25px;
+}
+
+.search {
+  width: calc(100% - 100px);
+  &-inner {
+    width: 100%;
+    min-width: 150px;
+    height: 35px;
+  }
+  &-input {
+    width: calc(100% - 110px);
+    height: calc(100% - 2px);
+    background-color: var(--transparent);
+    padding: 0 10px 0 10px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    &:hover,
+    &:focus {
+      border-width: 2px;
+      border-style: solid;
+    }
+  }
+  &-btn {
+    &-ext {
+      padding-left: 8px;
+    }
+    &-magn {
+      padding-right: 8px;
+    }
+  }
+}
+
+.actions {
+  width: 70px;
+  margin: 0 25px 0 5px;
+  &-menu {
+    z-index: 5;
+    position: fixed;
+    width: 200px;
+    top: 50px;
+    right: 0px;
+    border-bottom-left-radius: 25px;
+    &-footer {
+      width: calc(100% - 10px);
+      border-top-width: 1px;
+      border-top-style: solid;
+    }
+  }
+}
+
+.logo-header {
+  width: 25px;
+  height: 25px;
+  margin-left: 3px;
+  &-react:hover,
+  &-react:focus {
+    img {
+      box-shadow: 0 0 6px 3px #359bee;
+    }
+  }
+  &-github:hover,
+  &-github:focus {
+    img {
+      box-shadow: 0 0 6px 3px #6b6b6b;
+    }
+  }
+  &-firebase:hover,
+  &-firebase:focus {
+    img {
+      box-shadow: 0 0 6px 3px #ff8f25;
+    }
+  }
+  &-vercel:hover,
+  &-vercel:focus {
+    img {
+      box-shadow: 0 0 6px 3px #6b6b6b;
+    }
+  }
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .h-icon {
+    margin: 0 2px 0 2px;
+  }
+  .search {
+    &-inner {
+      justify-content: space-between;
+    }
+    &-input {
+      width: calc(100% - 80px);
+      padding: 0 4px 0 4px;
+    }
+  }
+  .actions {
+    margin: 0 8px 0 8px;
+  }
+}
