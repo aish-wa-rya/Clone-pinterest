@@ -1,1 +1,1 @@
-# Clone-pin
+# Clone of Pinterest
