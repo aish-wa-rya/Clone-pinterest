@@ -1,4 +1,4 @@
-Clone (tutorial based)
+Pinterest-inspired Application (tutorial based)
 
 Features:
 - Profiles
